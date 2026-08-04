@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Array functions</h1>
+    <script>
+      // Array
+      //  let ar = [1,2,3,4,5]
+      //  console.log(ar)
+
+      //  let emp = [101, 'Ravi', 1200.34, 'S.E.', "XYZ"]
+      //  console.log(emp)
+
+      // Destructuring
+      // Array Dest
+
+      //  let cars = ['Tata', 'Toyota', 'Mahindra', 'Porche','BMW','Farrari','Kia',]
+      //  console.log(cars)
+      //  console.log(cars[2])
+      // console.log(cars[4])
+
+      // console.log('After Dest:')
+      // let [ , car1, , , car2, car5] = cars; // Array Dest
+      // console.log(car1)
+      // console.log(car2)
+      // console.log(car5)
+
+      // Object Dest
+      //   let student = {
+      //     name: "Lakshay",
+      //     age: 21,
+      //     course: "BCA",
+      //     city: "GZB",
+      //   };
+
+      //   console.log(student);
+      //   console.log(student.age);
+      //   console.log(student.city);
+
+      //   console.log(student["name"]);
+      //   console.log(student["course"]);
+
+      //   console.log("After Dest:");
+      //   let { course, name, city } = student; // Object Dest
+      //   console.log(course);
+      //   console.log(name);
+      //   console.log(city);
+
+      // Array functions
+      // ForEach
+
+      let ar = [1, 2, 3, 4, 5, 6 , 7,8,9];
+      console.log(ar);
+      //   console.log("Data 1");
+      //   let show = function (num) {
+      //     console.log(num);
+      //   };
+      //   ar.forEach(show);
+
+      //   console.log("Data 2");
+      //   ar.forEach(function (num) {
+      //     console.log(num);
+      //   });
+
+      //   console.log("Data 3");
+      //   ar.forEach(num => console.log(num));
+
+      // map
+
+      //   let square_ar = ar.map(num => num * num)
+      //   console.log(square_ar);
+
+      // filter
+      let even = (num) => {
+        if (num % 2 == 0) 
+        return num;
+      };
+let even_ar = ar.filter(even);
+    console.log(even_ar)
+
+let odd_ar = ar.filter(num => num % 2 != 0)
+      console.log(odd_ar)
+</script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Project Jokes API</title>
+</head>
+<body>
+    <h1>Project - Jokes API</h1>
+    <hr>
+    <p id="p1"></p>
+    
+    <script>
+     let url = "http://www.official-joke-api.appspot.com/random_joke";
+     let API_Joke = fetch(url);
+
+     API_Joke
+     .then((res)=> res.json())
+     .then((data)=>
+      {
+//         console.log(data);
+         let str = `<b>Joke Id: </b> ${data["id"]}     <br>
+         <b>Joke Type: </b> ${data.type}            <br>
+         <b>Joke Setup: </b> ${data.setup}          <br>
+         <b>Joke PunchLine: </b> ${data.punchline}  <br>        
+         `;
+         document.getElementById('p1').innerHTML = str;
+      }
+    )
+    </script>
+</body>
+</html>

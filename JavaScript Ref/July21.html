@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JavaScript Refresher</h1>
+    <script>
+      // var
+      //   var a = 10;
+      //   console.log("a=" + a);
+
+      //     var a = 20; // re-declaration is allowed
+      //     console.log("a=" + a);
+
+      //     a = 50; // re-initialization is allowed
+      //     console.log("a=" + a);
+
+      //     // let
+      //     let b =20;
+      //     console.log("b=" + b);
+
+      //   //  let b =40; // re-declare is not allowed
+
+      //      b =40;
+      //     console.log("b=" + b);
+
+      //     // const
+      //     const c = 30;
+      //     console.log("c=" + c);
+      //     // const c = 40;
+      //     c = 50;
+
+      // function
+      // normal - named - simple function
+      //  function show(){
+      //     console.log("In Show function");
+      //     document.write("In document - show");
+      //  }
+      //  show();
+
+      //  function add(num1, num2){
+      //    console.log(num1+num2)
+      //  }
+      //  add(3,2)
+
+      // function sub(){
+      //     let a=5,b=7
+      //     return(a-b)
+      // }
+      // let s= sub();
+      //  console.log(s)
+      //  console.log(sub())
+
+      // function mul(a,b){
+      //     return a*b
+      // }
+      // console.log(mul(3,8))
+
+      // function expression
+      // function print(){
+      //     console.log('print')
+      // }
+      // print()
+      // let show = function(){
+      //     console.log('show')
+      // }
+      // show()
+
+      // let add = function (a,b,c){
+      //     return a+b+c;
+      // }
+      // console.log(add(4,5,9));
+
+      // arrow function
+      // function display(){    // normal function
+      //     console.log('display')
+      // }
+      // display()
+      // let show = function(){   // function expression
+      //     console.log('show')
+      // }
+      // show()
+      // let print = ()=>{      // arrow function
+      //     console.log('print')
+      // }
+      // print()
+
+      // let add = (a,b)=> console.log(a+b);
+      // add(3,6)
+
+      // let mul = a => console.log(a*a);
+      // mul(6)
+
+      // let mul1 = a => a*a;
+      // console.log(mul1(5))
+
+      // Array
+      // let ar = [10,20,30,40,50]
+      // console.log(ar)
+      // let arr = [101, "Ramesh", 2300.56, "S.E.", "XYZ"];
+      // console.log(arr)
+
+      // for(let i=0; i<arr.length;i++){
+      //     console.log(arr[i])
+      // }
+      // for(let i in ar)
+      // console.log(ar[i])
+
+      // for(let i of arr)
+      // console.log(i)
+
+      // spread operator ...
+      // let ar = [1,2,3,4,5]
+      // console.log(ar)
+
+      // // let ar1 = ar;
+      // // ar1[2] = 100;
+      // // console.log(ar)
+
+      // let ar2 = [...ar]; // [ar[0], ar[1], ar[2],ar[3], ar[4]]
+      // ar2[2] = 50;
+      // console.log(ar)
+      // console.log(ar2)
+
+      // console.log(Math.max(4,7,2))
+      // console.log(Math.max(...ar))
+
+      // let arr1 = [1,2,3,4]
+      // let arr2 = [5,6,7,8]
+      // let arr3 = [10, ...arr1, 11, ...arr2, 12]
+      // console.log(arr3);
+
+      // rest operator
+
+      function add(a, ...ar) {
+        console.log("data: ");
+        for (let i of ar) console.log(i);
+      }
+
+      add();
+      add(2);
+      add(4, 6);
+      add(4, 3, 2);
+      add(4, 3, 2, 7, 8);
+    </script>
+  </body>
+</html>

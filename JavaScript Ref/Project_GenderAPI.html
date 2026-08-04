@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Project - Gender Prodict APP</title>
+</head>
+<body>
+    <h1>Project - Gender Predict App</h1>
+    <hr>
+    <input type="text" id="name">
+    <button onclick="predictGender()">Predict Gender</button>
+    <hr>
+    <p id="p1"></p>
+<script>
+    let Name;
+</script>
+    <script>
+      function predictGender(){  
+        Name = document.getElementById('name').value;   
+       let url ="https://api.genderize.io?name=" + Name;
+       fetch(url)
+       .then(res => res.json())
+       .then(data => {
+        //console.log(data)
+         let gen = `<b>Name : </b>  ${data.name} <br>
+         <b>Gender : </b>  ${data.gender} <br>
+         <b>Probability : </b>  ${data.probability} <br>
+         `;
+         document.getElementById('p1').innerHTML = gen;
+       }).catch(err => console.log(err));       
+      }
+    </script>
+</body>
+</html>
