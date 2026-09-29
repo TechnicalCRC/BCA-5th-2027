@@ -1,7 +1,5 @@
-const Task3 = () => {
-  let todoName = "Buy Chocolate";
-  let todoDate = "24-09-2026";
-
+const Task3 = ({todoName, todoDate}) => {
+  
   return (
     <>
       <div className="row mt-2">

@@ -1,6 +1,5 @@
-const Task1 = ({todoName, todoDate}) => {
-
-    return (
+const TodoItem = ({ todoName, todoDate }) => {
+  return (
     <>
       <div className="row mt-2">
         <div className="col-5">{todoName}</div>
@@ -12,5 +11,4 @@ const Task1 = ({todoName, todoDate}) => {
     </>
   );
 };
-
-export default Task1;
+export default TodoItem;
